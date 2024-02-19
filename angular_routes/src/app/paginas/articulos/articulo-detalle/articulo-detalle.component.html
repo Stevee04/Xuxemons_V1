@@ -1,0 +1,9 @@
+<ng-container *ngIf="(article$ | async) as article">
+
+  <h1>{{article.title}}</h1>
+  <img *ngIf="article.photo" [src]="article.photo" alt="Article Photo">
+  <p>{{article.description}}</p>
+
+  <button type="button" (click)="onCloseDetail()">Volver</button>
+
+</ng-container>

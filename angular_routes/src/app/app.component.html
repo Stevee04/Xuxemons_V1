@@ -1,0 +1,14 @@
+<ul>
+  <li><a routerLink="welcome" routerLinkActive="currentPage">Bienvenida</a></li>
+  <li><a routerLink="articles" routerLinkActive="currentPage">Articulos</a></li>
+  <li><a routerLink="about-me" routerLinkActive="currentPage">Sobre Mi</a></li>
+</ul>
+
+<div class="list-container">
+  <div *ngFor="let foto of fotos" class="card-flex">
+    <h1>{{foto.nombre}}</h1>
+    <img src="{{foto.imagen}}" alt="{{foto.nombre}}">
+  </div>
+</div>
+
+<router-outlet></router-outlet>

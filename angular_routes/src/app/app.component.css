@@ -1,0 +1,34 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.currentPage {
+  font-weight: bold;
+  font-size: large;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+
+.card{
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  justify-content: center;
+}
+
+.card>img{
+  width: 50px;
+  margin: auto;
+}
+
+.card-flex {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}

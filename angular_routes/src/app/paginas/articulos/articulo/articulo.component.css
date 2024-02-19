@@ -1,0 +1,10 @@
+.article-container {
+  width: 325px;
+  margin: 7px;
+}
+
+img {
+  width: 325px;
+  height: 200px;
+  object-fit: cover;
+}

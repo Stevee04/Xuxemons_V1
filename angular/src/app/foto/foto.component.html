@@ -1,0 +1,15 @@
+<div class="foto-container">
+    
+  <h1 *ngIf="!editando">{{ foto.nombre | uppercase }}</h1>
+
+  <div *ngIf="editando">
+    <label for="nombre">Título</label> <br>
+    <input id="nombre" type="text" [value]="foto.nombre">
+  </div>
+
+  <img [src]="foto.imagen" alt="Imagen de muestra" />
+  
+  <button type="button" 
+          class="material-symbols-outlined"
+          (click)="cambiarEdicion()">edit</button>
+</div>

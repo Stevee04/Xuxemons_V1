@@ -1,0 +1,16 @@
+<!-- <select name="tipo" id="tipo" [(ngModel)]="tipo">
+  <option value=""></option>
+  <option *ngFor="let tipo of conseguirTipo()" [value]="tipo">{{tipo}}</option>
+</select> -->
+
+<!-- <div class="list-container">
+  <app-foto *ngFor="let imagen of obtenerFotosPorTipo()"
+            [foto]="imagen" (guardarCambios)="guardarFoto($event)"></app-foto>
+</div> -->
+<div class="list-container">
+  <div *ngFor="let foto of fotos" class="card-flex">
+    <h1>{{foto.nombre}}</h1>
+    <img src="{{foto.imagen}}" alt="{{foto.nombre}}">
+  </div>
+</div>
+

@@ -1,0 +1,7 @@
+<h3>En esta sección aparecen todos los artículos de nuestra página web:</h3>
+
+<div class="container">
+  <app-articulo *ngFor="let article of (articles$ | async)"
+                [_article]="article"
+  ></app-articulo>
+</div>
