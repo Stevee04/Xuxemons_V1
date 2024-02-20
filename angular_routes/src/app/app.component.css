@@ -23,8 +23,12 @@ a {
 }
 
 .card>img{
-  width: 50px;
+  /* width: 50px; */
   margin: auto;
+}
+
+.div>img{
+  width: 200px;
 }
 
 .card-flex {
